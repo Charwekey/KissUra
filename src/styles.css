@@ -1,0 +1,174 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px;
+   
+}
+.navigation{
+     background-color: #fff0f5;
+    background-repeat: no-repeat; /* Options: repeat, repeat-x, repeat-y */
+  height: 100vh;
+
+  
+}
+/* .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px); /* Or remove if you're already blurring body */
+  /* z-index: 1;} */ */
+.logo p{
+    font-size: large;
+    font-family: Verdana;
+    font-weight: bolder;
+}
+span{
+    color:  #e60073;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav li {
+    text-decoration: none;
+    list-style: none;
+    margin: 20px 25px;
+
+}
+.nav li a{
+    text-decoration: none;
+    color: #e60073;
+}
+
+.search input{
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;
+    padding: 5px 40px;
+    background-color:#e60073;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+}  
+.search input::placeholder{
+color:white;
+}
+
+/* === HERO LAYOUT === */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;           /* keeps layout tidy on small screens */
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 2rem;                 */
+  /* padding: 4rem 6%; */
+}
+
+/* -- Left column (text) -- */
+.hero-text {
+  flex: 1 1 320px;           /* grow, shrink, basis */
+  max-width: 560px;
+}
+.hero-text h1 {
+  font-size: 50px;
+  color: #e60073;            /* signature lipstick hue */
+  margin-bottom: 0.75rem;
+}
+.hero-text p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* -- Right column (media) -- */
+.hero-media {
+  flex: 1 1 345px;           /* matches your embed’s native width */
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  /* box-shadow: 0 4px 24px rgba(0,0,0,.12); */
+}
+
+/* Make the iframe fill its box and stay responsive */
+.hero-media.img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+/* products */
+/* .bcontainer{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image{
+  width: 200px;
+  height: 200px;
+  
+} */
+
+.bcontainer {
+  width: 80%;
+  height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px; /* Adjusts spacing between containers */
+    margin: 30px auto; /* Centers the container */
+}
+
+.container {
+  border: 1px solid #f87ebb;
+  margin: 10px  ;
+  border-radius:  10px ;
+  height: 230px;
+  width: 150px;
+    flex: 0 0 calc(25% - 15px); /* Four items per row, accounting for gap */
+    box-sizing: border-box;
+     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+                opacity 0.4s ease;
+    text-align: center; /* Centers content inside each container */
+}
+
+.image {
+  height: 200px;
+    width: 150px; 
+}
+
+.container:hover, .container:focus {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px #f3cad8;
+    margin: 10px;
+}
+.addToCart {
+  /* background-color: #f095b3; */
+    margin-top: 5px;
+border-radius: 10px ;
+    border: 1px solid #e0a8bb;
+
+}
+
+.addToCart:hover{
+  color: #e60073;
+  font-size: 15px;
+  cursor: pointer;
+}
