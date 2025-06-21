@@ -11,19 +11,13 @@
 
   
 }
-/* .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(3px); /* Or remove if you're already blurring body */
-  /* z-index: 1;} */ */
 .logo p{
     font-size: large;
-    font-family: Verdana;
-    font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+ 
 }
+
 span{
     color:  #e60073;
 
@@ -54,6 +48,7 @@ span{
     outline: none;
     color: white;
 }  
+
 .search input::placeholder{
 color:white;
 }
@@ -102,28 +97,13 @@ color:white;
   height: 300px;
   border: 0;
 }
+.hero-text span{
 
-/* products */
-/* .bcontainer{
-  width: 70%;
-  height: auto;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.container{
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.image{
-  width: 200px;
-  height: 200px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
   
-} */
+}
+
 
 .bcontainer {
   width: 80%;
@@ -171,4 +151,131 @@ border-radius: 10px ;
   color: #e60073;
   font-size: 15px;
   cursor: pointer;
+}
+
+
+/* blog\ */
+
+
+#blog {
+  background-color: #f3cad8;
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #5A2E2E;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(230, 0, 115, 0.1);
+}
+
+.containerr h2 {
+
+  text-align: center;
+  color: #e60073;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px
+}
+.containerr span{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+.containerr{
+  width: 50%;
+  margin: 0 auto  ;
+
+}
+article {
+  display: block  ;
+  margin: 20px auto ;
+  border-left: 2px solid #f87ebb;
+  padding-left: 1.2rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+article h3 {
+  color: #e60073;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333333;
+}
+
+/* form */
+.contact-container {
+  width: 40%;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #f3cad8;
+  border-radius: 16px;
+}
+.scontainer h2{
+  text-align: center;
+  color: #e60073;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px
+
+}
+.form{      
+  margin: 10px auto;
+}
+.form label{
+  font-size: 1.0rem;
+
+}
+.form input, .form textarea , .form button {
+  width: 50%;
+  margin: 10px auto;
+  outline: none;
+border: none;
+border-radius: 5px;
+padding: 8px;
+
+}
+
+.form button {
+  width: 33%;
+  border-radius: 10px;
+  background-color: #e60073;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.form button:hover {
+  background-color: #f87ebb; 
+  color: #050505;/* Darker shade on hover */
+}
+
+
+
+/* footer */
+.footer{
+  background-color: #fadbe5;
+  font-size: 1.0rem;
+  padding: 20px;
+  text-align: center;
+  color: #e60073;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer span{
+  color: black;
+}
+.dan{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+ color: #e60073;
+ font-size: 1.2rem;
+
 }
